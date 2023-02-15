@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-2 (task-0)</title>
+</head>
+
+<body>
+   <h1>Lesson-2 (task-0)</h1>
+   <img src="img/01.png" alt="" width="300"><br>
+
+   <script>
+      //введення данних
+      let a = parseFloat(prompt('a = ', 0)),
+         b = parseFloat(prompt('b = ', 0)),
+         c = parseFloat(prompt('c = ', 0));
+      //обчислення
+      const s1 = (a + 12 + b).toFixed(2),
+         s2 = Math.sqrt((a + b) / (2 * a)).toFixed(2),
+         s3 = Math.cbrt((a + b) * c).toFixed(2),
+         s4 = Math.sin(a / (-b)).toFixed(2);
+      //виведення
+      document.write(`
+      S1 = <mark>${s1}</mark><br>
+      S2 = <mark>${s2}</mark><br>
+      S3 = <mark>${s3}</mark><br>
+      S4 = <mark>${s4}</mark><br>
+      `);
+
+   </script>
+</body>
+
+</html>
