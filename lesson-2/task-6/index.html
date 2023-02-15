@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-2 (task-6)</title>
+</head>
+
+<body>
+   <h1>Lesson-2 (task-6)</h1>
+   <p>Задача 6. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару
+      окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+
+
+
+   <script>
+      //введення даних
+      const priceFirstItem = parseFloat(prompt('Вартість першого товару: ', 0.00)),
+         hManyfirstItem = parseInt(prompt('Кількість товару?', 1)),
+         priceSecondItem = parseFloat(prompt('Вартість другого товару: ', 0.00)),
+         hManySecondItem = parseInt(prompt('Кількість товару?', 1)),
+         priceThirdItem = parseFloat(prompt('Вартість третього товару: ', 0.00)),
+         hManyThirdItem = parseInt(prompt('Кількість товару?', 1)),
+         // обчислення даних
+         sumFirstItem = priceFirstItem * hManyfirstItem,
+         sumSecondItem = priceSecondItem * hManySecondItem,
+         sumThirdItem = priceThirdItem * hManyThirdItem,
+         total = sumFirstItem + sumSecondItem + sumThirdItem;
+      // вивід даних
+      document.write(`
+         <table border="2px" width="30%">
+      <tbody>
+         <tr>
+            <td>Товар</td>
+            <td>Вартість</td>
+            <td>Кількість</td>
+            <td>Сумма</td>
+
+         </tr>
+
+         <tr>
+            <td>Перший Товар</td>
+            <td>${priceFirstItem}</td>
+            <td>${hManyfirstItem}</td>
+            <td>${sumFirstItem}</td>
+         </tr>
+
+         <tr>
+            <td>Другий Товар</td>
+            <td>${priceSecondItem}</td>
+            <td>${hManySecondItem}</td>
+            <td>${sumSecondItem}</td>
+         </tr>
+         <tr>
+            <td>Третій товар</td>
+            <td>${priceThirdItem}</td>
+            <td>${hManyThirdItem}</td>
+            <td>${sumThirdItem}</td>
+         </tr>
+         <tr>
+            <td>Загальна вартість</td>
+            <td></td>
+            <td></td>
+            <td>${total}</td>
+         </tr>
+      </tbody>
+   </table>`)
+   </script>
+</body>
+
+</html>

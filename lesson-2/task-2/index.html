@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-2 (task-2)</title>
+</head>
+
+<body>
+   <h1>Lesson-2 (task-2)</h1>
+   <p>Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.</p>
+   <script>
+      const currentYear = new Date().getFullYear();
+      let birthdayYear = parseInt(prompt("Введіть ваш рік народження: ", 2005));
+      document.write(`Вам зараз повних ${currentYear - birthdayYear} років`)
+   </script>
+</body>
+
+</html>
