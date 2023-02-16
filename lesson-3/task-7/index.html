@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-3 (task-7)</title>
+</head>
+
+<body>
+   <h1>Lesson-3 (task-7)</h1>
+   <p>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+   </p>
+   <script>
+      const numMonth = parseInt(prompt("Введіть номер місяця (від 1 до 12):", "10"))
+      if (numMonth <= 2 || numMonth === 12) {
+         document.write(`Місяць під номером ${numMonth} належить до пори року Зими`)
+      } else if (numMonth <= 5) {
+         document.write(`Місяць під номером ${numMonth} належить до пори року Весни`)
+      } else if (numMonth <= 8) {
+         document.write(`Місяць під номером ${numMonth} належить до пори року Літо`)
+      } else if (numMonth <= 11) {
+         document.write(`Місяць під номером ${numMonth} належить до пори року Осені`)
+      } else {
+         document.write(`місяць під номером ${numMonth} не існує`)
+      }
+   </script>
+</body>
+
+</html>
