@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-14)</title>
+</head>
+
+<body>
+   <h1>Lesson-5 (task-14)</h1>
+   <p>Каса. Користувачу повідомляють суму, яку йому треба сплатити. Користувач поступово вводить суму грошей до тих пір,
+      поки суми не буде достатньо для оплати товарів (кожного разу користувачу повідомляють, яку ще суму потрібно
+      ввести).
+   </p>
+   <script>
+      const minSum = 1, maxSum = 5000;
+      let getRandomSum = minSum + Math.floor(Math.random() * (maxSum - minSum + 1))
+      let resultSum = getRandomSum;
+      let i = 0;
+      let answer
+      do {
+         let userGetSum = parseInt(prompt('Введіть сумму грошей'))
+         resultSum -= userGetSum;
+         answer = resultSum > 0 ? alert(`Вам ще потрібно заплатити ${resultSum}`) : alert(`Ви заплатили більше на  ${Math.abs(resultSum)}`);
+         i++
+      } while (i < resultSum);
+
+   </script>
+</body>
+
+</html>

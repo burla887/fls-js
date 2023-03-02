@@ -2,35 +2,35 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Lesson-3 (task-3)</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-3 (task-3)</title>
 </head>
 
 <body>
-   <h1>Lesson-3 (task-3)</h1>
-   <p>Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
-   </p>
-   <script>
-      const numMin = 1
-      const numMax = 5
-      const randomNum = numMin + Math.floor(Math.random() * (numMax - numMin + 1))
-      let yourNum = parseInt(prompt('Ведіть число від 1 до 5', "1"))
+    <h1>Lesson-3 (task-3)</h1>
+    <p>
+        Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+    </p>
+    <script>
+        const numMin = 1;
+        const numMax = 5;
+        const randomNum =
+            numMin + Math.floor(Math.random() * (numMax - numMin + 1));
+        let yourNum = parseInt(prompt("Ведіть число від 1 до 5", "1"));
 
-      if (randomNum === yourNum) {
-         document.write(`ви вгадали з першого разу номер ${randomNum}`)
-      } else {
-         let yourNum = parseInt(prompt('Ведіть число від 1 до 5', "1"))
-         if (randomNum === yourNum) {
-            document.write(`ви вгадали з другого разу номер ${randomNum}`)
-         } else {
-            document.write(`Нажаль ви не вгадали  номер ${randomNum}`)
-         }
-
-      }
-
-   </script>
+        if (randomNum === yourNum) {
+            document.write(`ви вгадали з першого разу номер ${randomNum}`);
+        } else {
+            yourNum;
+            if (randomNum === yourNum) {
+                document.write(`ви вгадали з другого разу номер ${randomNum}`);
+            } else {
+                document.write(`Нажаль ви не вгадали  номер ${randomNum}`);
+            }
+        }
+    </script>
 </body>
 
 </html>

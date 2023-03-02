@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-15)</title>
+</head>
+
+<body>
+   <h1>Lesson-5 (task-15)</h1>
+   <p>Користувача поступово вводить показники температури протягом року. Знайти середню температуру.</p>
+   <script>
+      const month = 12;
+      result = 0;
+      let i = 1;
+      while (i <= month) {
+         let userResult = parseInt(prompt(`Введіть температуру у місяці під номером ${i}`))
+         result += userResult;
+         i++
+      }
+      result = result / month;
+      const answer = document.write(`Середня температура за рік була<b> ${result.toFixed(2)}</b> C `)
+
+   </script>
+</body>
+
+</html>

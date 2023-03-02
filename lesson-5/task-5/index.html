@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-5)</title>
+</head>
+
+<body>
+   <h1>Lesson-5 (task-5)</h1>
+   <p>Задача 5. Вивести таблицю</p>
+
+   <script>
+       const startWriteTable = document.write("<table border='2px'>")
+      for (let i = 1; i <= 9; i++) {
+         if( i % 3 == 1){
+             const startNewRow = document.write('<tr>')
+         }
+          document.write(`<td>${i}</td>`)
+      }
+   const endWriteTable = document.write(" </table>")
+   </script>
+</body>
+
+</html>

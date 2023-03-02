@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-4)</title>
+</head>
+
+<body>
+   <h1>Lesson-5 (task-4)</h1>
+   <p>Задача 4. Вивести таблицю з 3 рядків і 7 стовпців</p>
+   <script>
+      const rowLenght = 3, columLenght = 7;
+      const startWriteTable = document.write("<table border='2px'>")
+
+      for(i = 0; i < rowLenght;i++){
+            const startNewRow = document.write('<tr>')
+               for (let j = 1; j <= columLenght; j++) {
+                  document.write(`<td>${j}</td>`)
+               }
+               const endNewRow = document.write('</tr>')
+         }
+
+      const endWriteTable = document.write(" </table>")
+
+   </script>
+</body>
+
+</html>

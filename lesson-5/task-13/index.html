@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-13)</title>
+</head>
+
+<body>
+   <h1>Lesson-5 (task-13)</h1>
+   <p>Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі розміром N*M. Маючи К снарядів користувач
+      намагається потопити корабель.</p>
+   <script>
+
+      const numberRow = parseInt(prompt("Введіть кількість рядків", "2"));
+      const numberColumn = parseInt(prompt("Введіть кількість стовбців", "2"));
+      const numberShells = parseInt(prompt("Введіть кількість снарядів", "2"));
+      const numberRowComp = Math.floor(Math.random() * numberRow);
+      const numberColumnComp = Math.floor(Math.random() * numberColumn);
+
+      for (let i = 1; i <= numberShells; i++) {
+         let numberRowUser = parseInt(prompt(`Введіть номер рядка ${i} пострілу`, "2")
+         );
+         let numberColumnUser = parseInt(prompt(`Введіть номер стовбця ${i} пострілу`, "2")
+         );
+         if (numberRowComp === numberRowUser && numberColumnComp === numberColumnUser) {
+            document.write(`<h3>Ви виграли!!!</h3>`);
+            break;
+         } else alert(`Ви не влучили.`);
+      }
+
+
+   </script>
+</body>
+
+</html>

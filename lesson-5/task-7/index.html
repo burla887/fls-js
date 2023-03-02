@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-7)</title>
+</head>
+
+<body>
+   <h1>Lesson-5 (task-7)</h1>
+   <p>Задача 7. Вивести на екран N абзаців (N вводиться користувачем) за зразком:</p>
+   <script>
+      const numParagraph = parseInt(prompt('Введіть кількість параграфів: ', '4'))
+      for (let i = 1; i <= numParagraph; i++) {
+         document.write(`<h1>Заголовок ${i}</h1>`)
+         for (let j = 0; j < i; j++) {
+            document.write(`<p>Заголовок ${i}, параграф ${j + 1}</p>`)
+
+         }
+      }
+
+   </script>
+</body>
+
+</html>

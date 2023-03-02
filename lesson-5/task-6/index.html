@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-6)</title>
+</head>
+
+<body>
+   <h1> Lesson-5 (task-6)</h1>
+   <p>Задача 6. Вивести 3 таблиці (по 3 рядки і 3 стовпці у кожній) за зразком
+   </p>
+   <script>
+      let numberOnTable = 1
+      for (let i = 0; i < 3; i++) {
+         let startWriteTable = document.write("<table border='2px'><tbody>")
+         for (let j = 0; j < 3; j++) {
+            const newRowTable = document.write(`<tr>`)
+            for (let k = 0; k < 3; k++) {
+               document.write(`<th>${numberOnTable++}</th>`)
+            }
+            const endRowTable = document.write(`</tr>`)
+         }
+         let endWriteTable = document.write("</tbody> </table> <br>")
+      }
+   </script>
+</body>
+
+</html>

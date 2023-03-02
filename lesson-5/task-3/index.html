@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-3)</title>
+</head>
+
+<body>
+   <h1>Lesson-5 (task-3)</h1>
+   <p>Вивести таблицю з одним рядком і 7 стовпцями.</p>
+
+   <script>
+      const columLenght = 7
+      const startWriteTable = document.write("<table border='2px'><tr>")
+      for (let i = 1; i <= columLenght ; i++) {
+         document.write(`<td>${i}</td>`)
+      }
+      const endWriteTable  = document.write("</tr> </table>")
+   </script>
+</body>
+
+</html>

@@ -2,36 +2,35 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Lesson-3 (task-2)</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-3 (task-2)</title>
 </head>
 
 <body>
-   <h1>Lesson-3 (task-2)</h1>
-   <p>З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше,
-      якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.</p>
+    <h1>Lesson-3 (task-2)</h1>
+    <p>З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.</p>
 
-   <script>
-      const priceItem = parseFloat(prompt('Ціна товару (ГРН):', 15))
-      const userMoney = parseFloat(prompt('Скільки у вас грошей (ГРН):', 22))
+    <script>
+        const priceItem = parseFloat(prompt('Ціна товару (ГРН):', 15))
+        const userMoney = parseFloat(prompt('Скільки у вас грошей (ГРН):', 22))
 
-      if (priceItem > userMoney) {
-         document.write(`<b>Нажаль вам не вистачає коштів</b><br>`)
-      } else {
-         document.write(`<b>Вам вистачає грошей</b><br>`)
+        if (priceItem > userMoney)
+            document.write(`<b>Нажаль вам не вистачає коштів</b><br>`)
+        else {
+            document.write(`<b>Вам вистачає грошей</b><br>`)
 
-         if ((userMoney - priceItem) > 4) {
-            const lotteryTicket = confirm("Бажаєте купити лотерейний білет?", '');
-            const lotteryTicketAnswer = lotteryTicket === true ?
-               document.write(`Так! давайте мені лотерейний білет скоріше!`) :
-               document.write(`НІ,мені не потрібен  лотерейний білет`)
-         } else {
-            document.write(`Вам нажаль не вистачає на лотерейний білет`)
-         }
-      }
-   </script>
+            if ((userMoney - priceItem) > 4) {
+                const lotteryTicket = confirm("Бажаєте купити лотерейний білет?", '');
+                const lotteryTicketAnswer = lotteryTicket === true ?
+                    document.write(`Так! давайте мені лотерейний білет скоріше!`) :
+                    document.write(`НІ,мені не потрібен  лотерейний білет`)
+            } else
+                document.write(`Вам нажаль не вистачає на лотерейний білет`)
+
+        }
+    </script>
 </body>
 
 </html>

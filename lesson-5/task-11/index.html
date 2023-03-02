@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson-5 (task-11)</title>
+</head>
+
+<body>
+   <h1>Lesson-5 (task-11)</h1>
+   <p>Знайти суму 5 непарних чисел, що знаходяться між заданими користувачем числами.</p>
+   <script>
+      let userfirstNum = parseInt(prompt('Введіть перше число : ', '5'))
+      let userSecondNum = parseInt(prompt('Введіть друге число : ', '50'))
+      const lenght = userSecondNum - userfirstNum;
+      let result = 0;
+      let counter = 0;
+      for (let i = 0; i < lenght; i++) {
+         if (counter === 5) {
+            break
+         } else {
+            if (userfirstNum % 2 == 1) {
+               counter++;
+               result += userfirstNum;
+            }
+         }
+         userfirstNum++
+      }
+      alert(`Сумма 5 не парних чисел : ${result}`)
+   </script>
+</body>
+
+</html>
